@@ -2,7 +2,7 @@ FC = gfortran
 FFLAGS = -Wall -O2
 
 TARGET = bin/main
-SRC = main.f95
+SRC = main.f95 matrix.f95
 
 all: $(TARGET)
 $(TARGET): $(SRC)
