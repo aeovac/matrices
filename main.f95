@@ -1,12 +1,12 @@
 program main
-    use Matrix
+    use MatrixModule
     implicit none
 
-    type(matrixType) :: A
-
-    A = createMatrix(3, 3)
-
-
-    print *, A%isSquared()
+    type(Matrix) :: A
+    logical :: is
+    
+    A = createMatrix(4, 3)
+    is = isSquared(A)
+    print *,is
 
 end program main
